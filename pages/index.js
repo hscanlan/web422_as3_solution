@@ -10,7 +10,7 @@ export default function Home() {
 
   const [page, setPage] = useState(1);
   const [pageData, setPageData] = useState([])
-  const { data, error } = useSWR(`http://localhost:8080/api/listings?page=${page}&perPage=10`);
+  const { data, error } = useSWR(`https://web422-as1-navy.vercel.app/api/listings?page=${page}&perPage=10`);
 
   useEffect(() => {
     if (data) {
