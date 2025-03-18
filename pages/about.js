@@ -4,7 +4,7 @@ import ListingDetails from "@/components/ListingDetails";
 import PageHeader from "@/components/PageHeader";
 
 export async function getStaticProps() {
-  const res = await fetch("https://web422-as1-navy.vercel.app/api/listings/1206363");
+  const res = await fetch("https://web422-as1-navy.vercel.app/api/listings/10006546");
   const data = await res.json();
   return { props: { listing: data } };
 }
