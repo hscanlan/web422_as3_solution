@@ -4,7 +4,7 @@ import ListingDetails from "@/components/ListingDetails";
 import PageHeader from "@/components/PageHeader";
 
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:8080/api/listings/1206363");
+  const res = await fetch("/api/listings/1206363");
   const data = await res.json();
   return { props: { listing: data } };
 }
